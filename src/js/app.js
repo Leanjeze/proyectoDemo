@@ -17,6 +17,9 @@ function iniciarApp() {
     paginaSiguiente();
 
     paginaAnterior();
+
+    //Datos
+    datosElemet();
 }
 
 function mostrarSeccion(){
@@ -119,7 +122,7 @@ function paginaSiguiente() {
     paginaSiguiente.addEventListener(`click`, () =>{
         pagina++;
 
-        console.log(pagina);
+
     })
 }
 function paginaAnterior() {
@@ -127,6 +130,50 @@ function paginaAnterior() {
     paginaAnterior.addEventListener(`click`, () =>{
         pagina--;
 
-        console.log(pagina);
+
     })
+}
+function datosElemet() {
+
+    //String para nombre cita.
+    const nombreD = `Nombre`,
+        fechaD = `Fecha`,
+        horaD = `Hora`;
+
+    //Creamos un parrafo para el nombre cita.
+    const dNombre = document.createElement('P');
+    dNombre.textContent = nombreD;
+    dNombre.classList.add('nombre-Datos');
+
+    const dFecha = document.createElement('P');
+    dFecha.textContent = fechaD;
+    dFecha.classList.add('fecha-Datos');
+
+    const dHora = document.createElement('P');
+    dHora.textContent = horaD;
+    dHora.classList.add('hora-Datos');
+
+    const inNombre = document.createElement('INPUT');
+    inNombre.type = "nombre";
+    inNombre.classList.add('inpNombre');
+
+    const inFecha = document.createElement('INPUT');
+    inFecha.type = "date";
+    inFecha.classList.add('inpFecha');
+
+    const inHora = document.createElement('INPUT');
+    inHora.type = "time";
+    inHora.classList.add('inpHora');
+
+
+    //Lo inyectamos al HTML.
+    const datosDiv = document.querySelector('#datos')
+    datosDiv.appendChild(dNombre);
+    datosDiv.appendChild(inNombre);
+
+    datosDiv.appendChild(dFecha);
+    datosDiv.appendChild(inFecha);
+
+    datosDiv.appendChild(dHora);
+    datosDiv.appendChild(inHora);
 }
