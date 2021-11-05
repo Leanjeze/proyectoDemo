@@ -7,13 +7,13 @@
         },
         {
             "id": 2,
-            "nombre": "Corte de Cabello Niño",
-            "precio": 60
+            "nombre": "Corte de Cabello Mujer",
+            "precio": 100
         },
         {
             "id": 3,
-            "nombre": "Corte de Cabello Mujer",
-            "precio": 100
+            "nombre": "Corte de Cabello Niño",
+            "precio": 60
         },
         {
             "id": 4,

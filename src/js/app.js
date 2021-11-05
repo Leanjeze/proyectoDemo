@@ -96,7 +96,7 @@ async function mostrarServicios() {
             precioServicio.classList.add('precio-servicio');
 
             //Generar div contenedor de servicio
-            const servicioDiv = document.createElement('DIV');
+            const servicioDiv = document.createElement('LABEL');
             servicioDiv.classList.add('servicio');
             servicioDiv.dataset.idServicio = id;
 
@@ -121,6 +121,7 @@ function seleccionarServicio(e) {
     // Forzar que el elemento al cual le damos click sea el DIV
     if(e.target.tagName = 'P'){
         elemento = e.target.parentElement;
+
     } else {
         elemento = e.target;
     }
