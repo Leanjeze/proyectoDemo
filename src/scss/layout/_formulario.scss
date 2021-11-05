@@ -1,17 +1,22 @@
-.listado-datos {
+.formulario {
+
     @include tablet {
+        width: 100%;
         display: grid;
         gap: 2rem;
+        padding-right: 2.5rem;
         grid-template-columns: .5fr 3fr;
         grid-template-rows: repeat(3, 1fr);
     }
-    p{
+    label{
+        color: $blanco;
         font-size: 2.5rem;
-        text-align: center;
+        margin: auto 1rem;
     }
     input{
-        border-radius: .5rem;
+        border: none;
+        border-radius: .9rem;
         font-size: 2.5rem;
-        line-height: 2.5rem;
+        padding: 2rem;
     }
 }
