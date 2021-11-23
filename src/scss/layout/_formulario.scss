@@ -20,3 +20,15 @@
         padding: 2rem;
     }
 }
+
+.alerta{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    padding: $separacion/2;
+    text-align: center;
+    color: $blanco;
+    width: 100%;
+    &.error{
+        background-color: rgb(194, 000, 000);
+    }
+}
